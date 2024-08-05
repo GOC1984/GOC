@@ -9,7 +9,7 @@ body, html {
     width: 100%;
     font-family: 'Arial', sans-serif;
     color: #fff;
-    background: url('C:/Dev/Webseiten/GOC/GOC.jpg') no-repeat center center fixed;
+    background: url('images/GOC.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
