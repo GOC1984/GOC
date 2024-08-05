@@ -9,15 +9,22 @@ body, html {
     width: 100%;
     font-family: 'Arial', sans-serif;
     color: #fff;
-    background: url('GOC.jpg') no-repeat center center fixed;
+    background: url('images/GOC.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden; /* Prevent scrolling */
 }
 
-.header-container, .main-container {
+@media (min-width: 768px) and (min-height: 500px) {
+    body, html {
+        background-size: contain;
+    }
+}
+
+#header-container, #main-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -25,17 +32,17 @@ body, html {
     flex-grow: 1;
 }
 
-.header-container {
+#header-container {
     flex-grow: 0;
-    margin-top: 30px; /* Adjust the margin to move the header lower */
+    margin-top: 50px; /* Adjust the margin to move the header lower */
 }
 
-.main-container {
+#main-container {
     flex-grow: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -150px; /* Adjust this value to move the container up */
+    margin-top: -100px; /* Adjust this value to move the container up */
 }
 
 .container {
@@ -162,8 +169,6 @@ footer {
     text-align: center;
     padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    bottom: 0;
 }
 
 footer p {
